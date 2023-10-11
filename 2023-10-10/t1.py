@@ -1,0 +1,11 @@
+import numpy as np
+random_data = np.random.randint(1, 101, 100)
+array_2d = random_data.reshape(20, 5)
+max_value = np.max(array_2d)
+print("最大值:", max_value)
+mean_value = np.mean(array_2d)
+print("平均值:", mean_value)
+min_value_4th_row = np.min(array_2d[3, :])
+print("第4行的最小值:", min_value_4th_row)
+percentile_value_3rd_column = np.percentile(array_2d[:, 2], 25)
+print("第3列的25%的百分位数:", percentile_value_3rd_column)
